@@ -36,7 +36,6 @@
             
             <div id="covid19-dropdown-menu">
                     <button id="covid19-dropdown-menu-button" onclick="dropDownMenu(), removeSelectedCountryData(), closeModal()" class="dropbtn">Click to Select a Location</button>
-                    <!--<button id="covid19-dropdown-menu-button" onclick="dropDownMenu(), closeModal(); addEventListener('click', removeSelectedCountryData)" class="dropbtn">Click to Select a Location</button>-->
 
                     <div id="covid19-dropdown-countries" class="dropdown-content"></div>
             </div>
@@ -52,19 +51,6 @@
 </div>
     
 </body>
-
-<script>
-    //document.getElementById('covid19-dropdown-countries').addEventListener('mouseleave', document.getElementById('covid19-dropdown-countries').classList.add('hide'));
-    //document.getElementById('covid19-dropdown-menu-button').addEventListener('click', domEventTest());
-
-    //document.getElementById('covid19-dropdown-countries').addEventListener('shiftKey', domEventTest);
-    //document.getElementById('covid19-dropdown-menu-button').addEventListener('click', console.log('test successful'));
-
-    function domEventTest()  {
-        console.log('test successful');
-    }
-
-</script>
 
 <script src="scripts/variables.js"></script>
 <script src="scripts/select-country.js"></script>
