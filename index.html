@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 API PROJECT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="container">
+    <div id="tophalf">
+        <div id="covid19datablock">
+            <h1>COVID-19<br>DATA</h1>
+            <h4>UPDATED DAILY</h4>
+        </div>
+        
+        <object id="worldmap" data="images/world.svg" type="image/svg+xml" height="400px" alt="World Map"></object>
+        <div id="selected-country-data">
+            <div id="show-country-border" class="country-data-border">
+                <div id="show-country">
+                    <h2 id="h2-sc"></h2>
+                    <h4 id="h4-nc"></h4>
+                    <h4 id="h4-ac"></h4>
+                    <h4 id="h4-nd"></h4>
+                    <h4 id="h4-td"></h4>
+                    <button id="show-more-info-button" style="display: none;"></button>
+                </div>
+                <div id="loader-container">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+            </div>
+            
+            <div id="covid19-dropdown-menu">
+                    <button id="covid19-dropdown-menu-button" onclick="dropDownMenu(), removeSelectedCountryData(), closeModal()" class="dropbtn">Click to Select a Location</button>
+                    <!--<button id="covid19-dropdown-menu-button" onclick="dropDownMenu(), closeModal(); addEventListener('click', removeSelectedCountryData)" class="dropbtn">Click to Select a Location</button>-->
+
+                    <div id="covid19-dropdown-countries" class="dropdown-content"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="covid19cases">
+
+    </div>
+
+    <div id="morecountryinfo" class="morecountryinfo hide"></div>
+
+</div>
+    
+</body>
+
+<script>
+    //document.getElementById('covid19-dropdown-countries').addEventListener('mouseleave', document.getElementById('covid19-dropdown-countries').classList.add('hide'));
+    //document.getElementById('covid19-dropdown-menu-button').addEventListener('click', domEventTest());
+
+    //document.getElementById('covid19-dropdown-countries').addEventListener('shiftKey', domEventTest);
+    //document.getElementById('covid19-dropdown-menu-button').addEventListener('click', console.log('test successful'));
+
+    function domEventTest()  {
+        console.log('test successful');
+    }
+
+</script>
+
+<script src="scripts/variables.js"></script>
+<script src="scripts/select-country.js"></script>
+<script src="scripts/get-country-data.js"></script><!--called upon load-->
+<script src="scripts/remove-selected-country-data.js"></script>
+<script src="scripts/show-more-country-info.js"></script>
+<script src="scripts/dropdown-menu.js"></script>
+<script src="scripts/dropdown-menu-remove.js"></script>
+<script src="scripts/close-modal.js"></script>
+
+</html>

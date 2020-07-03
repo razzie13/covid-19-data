@@ -1,0 +1,1 @@
+const url = 'https://covid-193.p.rapidapi.com/statistics';

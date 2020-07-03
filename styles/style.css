@@ -1,0 +1,465 @@
+body  {
+    font-family: 'Rajdhani', sans-serif;
+    letter-spacing: 2px;
+    background-color: black;
+}
+
+h3  {
+    font-weight: bold;
+}
+h4  {
+    font-weight: normal;
+    line-height: 5px;
+}
+.country-data  {
+    transform: translate(-50%, -50%);
+    width: 294px;
+    top: 50%;
+    left: 50%;
+    position: relative;
+    color: black;
+    padding: 10px;
+    padding-left: 20px;
+    color: rgb(160, 251, 170);
+    border-style: hidden;
+    border-radius: 15px;
+}
+/*
+.country-data:nth-child(n+11)  {
+    display: none;
+}
+.country-data-border:nth-child(n+11)  {
+    display: none;
+}
+*/
+.country-data:hover  {
+    background-color: yellowgreen;
+}
+.country-data:nth-child(3n+1)  {
+    background-color: black;
+    color: white;
+    
+}
+.country-data:nth-child(3n+2)  {
+    background-color: black;
+    color: white;
+    
+}
+.country-data:nth-child(3n+3)  {
+    background-color: black;
+    color: white;
+}
+
+.country-data-border  {
+    padding: 4px;
+    margin: 10px;
+    border-style: hidden;
+    border-radius: 15px;
+}
+.country-data-border:nth-child(3n+1)  {
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+
+
+}
+.country-data-border:nth-child(3n+2)  {
+    background-color: #21D4FD;
+    background-image: linear-gradient(45deg, #21D4FD 0%, #B721FF 40%);
+
+}
+.country-data-border:nth-child(3n+3)  {
+    background-color: #40fe46;
+    background-image: linear-gradient(90deg, #40fe46 0%, #3d5bb9 100%);
+
+}
+#covid19cases  {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+    
+.warning  {
+    background-color: red;
+    color: white;
+}
+
+#show-country  {
+    transform: translate(-50%, -50%);
+    width: 264px;
+    height: 204px;
+    top: 50%;
+    left: 50%;
+    position: relative;
+    background-color: black;
+    padding: 10px;
+    padding-left: 20px;
+    color: white;
+    border-style: hidden;
+    border-radius: 15px;
+    
+}
+
+#show-country-border  {
+    background-color: #40fe46;
+    background-image: linear-gradient(90deg, #40fe46 0%, #3d5bb9 100%);
+    width: 300px;
+    height: 230px;
+    position: relative;
+    float: right;
+    
+}
+
+#tophalf  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#container  {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+}
+
+#covid19datablock  {
+    color: white;
+}
+
+#covid19datablock h4  {
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 5px;
+}
+
+#modal-close-button  {
+    right: 20px;
+    top: 20px;
+    position: absolute;
+}
+
+@media screen and (max-width: 499px) {
+
+    h1  {
+        color: white;
+        text-align: center;
+        font-size: 52px;
+        letter-spacing: 6px;
+    }
+
+    h6  {
+        font-size: 12px;
+    }
+
+    .morecountryinfo  {
+        width: 80%;
+        height: 94%;
+        background-color: black;
+        border-style: solid;
+        border-width: 5px;
+        border-color: white;
+        border-radius: 5px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        color: white;
+        overflow: scroll;
+    }
+    
+    .morecountryinfo h2  {
+        text-align: center;
+        font-size: 48px;
+    }
+    
+    .morecountryinfo h4  {
+        text-align: center;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    .morecountryinfo h6  {
+        text-align: center;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 6px;
+        color: rgb(101, 235, 23)
+    }
+
+    #worldmap  {
+        display: none;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #f1f1f1;
+        min-width: 200px;
+        max-height: 400px;
+        overflow: scroll;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-style: hidden;
+        border-radius: 15px;
+        font-size: 24px;
+        padding-top: 30px;
+        }
+        
+    }
+
+    .dropdown-content::after  {
+        FONT-VARIANT: JIS83;
+        content: 'scroll down for more places';
+        font-size: 9px;
+        width: 160px;
+        height: 20px;
+        color: grey;
+        z-index: 4;
+        position: absolute;
+        top: 14px;
+        right: 50%;
+        transform: translate(50%, 0);
+    }
+
+@media screen and (min-width: 500px) {
+
+h1  {
+    color: white;
+    text-align: center;
+    font-size: 6rem;
+    letter-spacing: 6px;
+}
+
+.morecountryinfo  {
+    width: 50%;
+    height: 80%;
+    background-color: black;
+    border-style: solid;
+    border-width: 15px;
+    border-color: white;
+    border-radius: 15px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: white;
+    overflow: hidden;
+}
+
+.morecountryinfo h2  {
+    text-align: center;
+    font-size: 48px;
+}
+
+.morecountryinfo h4  {
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.morecountryinfo h6  {
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 6px;
+    color: rgb(101, 235, 23)
+}
+
+#worldmap  {
+    position: relative;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    top: 200px;
+    width: 50%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    max-height: 400px;
+    overflow: scroll;
+    z-index: 1;
+    border-style: hidden;
+    border-radius: 0 0 0 15px;
+    margin-top: -20px;
+    padding-top: 30px;
+    margin-left: 20px;
+;
+    }
+
+}
+
+#modal-close-button  {
+    border-style: none;
+    border-radius: 15px;
+    height: 24px;
+    width: 110px;
+    background-color: #40fe46;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#show-more-info-button  {
+    border-style: none;
+    border-radius: 15px;
+    height: 24px;
+    width: 200px;
+    background-color: #40fe46;
+    color: black;
+    font-weight: bold;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+background-color: #3498DB;
+color: white;
+padding: 16px;
+font-family: 'Rajdhani', sans-serif;
+font-size: 20px;
+font-weight: bold;
+border: none;
+cursor: pointer;
+border-style: hidden;
+border-radius: 15px;
+position: relative;
+text-align: center;
+width: 100%;
+margin: auto;
+margin-bottom: 10px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+font-size: 20px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+.hide {display:none;}
+
+/* css loader */
+#loader-container  {
+width: 200px;
+height: 200px;
+border-style: solid;
+border-radius: 10px;
+background-color: black;
+transform: translate(-50%, -50%);
+position: absolute;
+left: 50%;
+top: 50%;
+display: none;
+}
+
+.loader-container-animation  {
+-webkit-animation-name: loader-appearance;
+        animation-name: loader-appearance;
+-webkit-animation-duration: 4s;
+        animation-duration: 4s;
+-webkit-animation-delay: 0s;
+        animation-delay: 0s;
+-webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
+
+.bar  {
+width: 40px;
+height: 30px;
+transform: translate(-50%, -50%);
+position: absolute;
+background-color: darkgray;
+top: 50%;
+border-style: solid;
+border-radius: 5px;
+box-sizing: border-box;
+}
+
+#bar1  {
+left: 25%;
+-webkit-animation-name: baranimate;
+        animation-name: baranimate;
+-webkit-animation-duration: 2s;
+        animation-duration: 2s;
+-webkit-animation-delay: 0s;
+        animation-delay: 0s;
+-webkit-animation-iteration-count: 2;
+        animation-iteration-count: 2;
+}
+#bar2  {
+left: 50%;
+-webkit-animation-name: baranimate;
+        animation-name: baranimate;
+-webkit-animation-duration: 2s;
+        animation-duration: 2s;
+-webkit-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+-webkit-animation-iteration-count: 2;
+        animation-iteration-count: 2;
+}
+#bar3  {
+left: 75%;
+-webkit-animation-name: baranimate;
+        animation-name: baranimate;
+-webkit-animation-duration: 2s;
+        animation-duration: 2s;
+-webkit-animation-delay: 1s;
+        animation-delay: 1s;
+-webkit-animation-iteration-count: 2;
+        animation-iteration-count: 2;
+}
+@-webkit-keyframes baranimate  {
+0% {height: 30px;}
+20% {height: 130px; background-color: white;}
+40%  {height: 30px;}
+100%  {height: 30px;}
+}
+@keyframes baranimate  {
+0% {height: 30px;}
+20% {height: 130px; background-color: white;}
+40%  {height: 30px;}
+100%  {height: 30px;}
+}
+
+@-webkit-keyframes loader-appearance  {
+0% {opacity: 100%;}
+90% {opacity: 100%;}
+100% {opacity: 0%;}
+}
+
+@keyframes loader-appearance  {
+0% {opacity: 100%;}
+90% {opacity: 100%;}
+100% {opacity: 0%;}
+}
