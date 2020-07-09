@@ -12,7 +12,9 @@ function getCountryData()  {
 
     .then((res) => {return res.json()})
     .then((data) =>  {
+        
         console.log(data);
+        
         console.log(data.response);
         
 ////////////////////////
@@ -50,9 +52,9 @@ function getCountryData()  {
 
         // -------------- POPULATE DROPDOWN LIST WITH DATA FROM EVERY NATION, CONTINENT, AND SHIP --------------------
 
-            var i;
-            for (var i = 0; i < data.results; i++)  {
+            for (let i = 0; i < data.results; i++)  {
                 let anchor = document.createElement('a');
+                
                 anchor.textContent = (data.response[i].country.replace(/-/g, ' '));
                 
                 // -------------- PASS API DATA WHEN CLICKED TO SMALL DATA WINDOW AND POPUP MODAL --------------------
